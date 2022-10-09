@@ -1,0 +1,14 @@
+{
+  "name": "peepsservice",
+  "version": "1.0.0",
+  "description": "Let's connect this service with base",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "genseven",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

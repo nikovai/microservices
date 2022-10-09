@@ -1,0 +1,41 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: base
+# spec:
+#   selector:
+#     matchLabels:
+#       app: base
+#   template:
+#     metadata:
+#       labels:
+#         app: base
+#     spec:
+#       containers:
+#       - name: base
+#         image: microservice/base
+
+#         ports:
+#         - containerPort: 5500
+#         imagePullPolicy: Never
+
+
+# ---
+
+# apiVersion: v1 
+
+# kind: Service
+# metadata:
+#   name: base
+# spec:
+#   selector:
+#     app: base
+#   ports:
+#   - port: 5500
+#     targetPort: 5500
+#   type: LoadBalancer
+
+
+
+
+
